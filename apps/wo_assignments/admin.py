@@ -5,7 +5,8 @@ from .models import WorkOrderAssignment
 class AdminBussinessPartner(admin.ModelAdmin):
     list_display = (
         'client', 
-        'address', 
+        'address',
+        'description', 
         'technician', 
         'date', 
     )

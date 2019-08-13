@@ -7,6 +7,7 @@ class WorkOrderAssignment(models.Model):
 
     client = models.ForeignKey(BussinessPartner, verbose_name="Cliente", on_delete=models.PROTECT)
     address = models.CharField(max_length=200, verbose_name="Dirección", )
+    description = models.TextField(default="")
     technician = models.ForeignKey(WorkerProfile, verbose_name="Técnico", on_delete=models.PROTECT)
     date = models.DateField(verbose_name="Fecha para servicio", )
 

@@ -12,6 +12,7 @@ class WOAssignmentSerializer(serializers.ModelSerializer):
             'client_phone',
             'client_status',
             'address',
+            'description',
             'technician',
             'technician_name',
             'date',
