@@ -5,5 +5,14 @@ from rest_framework import serializers
 class WOAssignmentSerializer(serializers.ModelSerializer):
     class Meta:
         model = WorkOrderAssignment
-        fields = "__all__"
-        fields = ('id', 'get_full_client', 'address', 'get_technician', 'date')
+        fields = (
+            'client',
+            'client_contact_person',
+            'client_employe',
+            'client_phone',
+            'client_status',
+            'address',
+            'technician',
+            'technician_name',
+            'date',
+        )
